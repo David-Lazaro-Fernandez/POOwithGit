@@ -10,6 +10,6 @@ package practica_3;
  * @author David Lazaro
  */
 public interface Componentes_Electronicos {
-    public String Cambiar_canal();
-    
+    public String Cambiar_canal(int canal);
+    public String Volumen (int nivel);
 }

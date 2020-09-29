@@ -9,8 +9,8 @@ package practica_3;
  *
  * @author David Lazaro
  */
-public class Dispositivo_Electronico implements Componentes_Electronicos{
-
+public class Dispositivo_Electronico{
+    
     /**
      * @return the marca
      */
@@ -38,15 +38,14 @@ public class Dispositivo_Electronico implements Componentes_Electronicos{
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-    private String marca,modelo;;
+    private String marca,modelo;
      
     
     public void Encender(){
-        System.out.println("Dispositivo Encendido");
+        System.out.println("Dispositivo Encendido"); //Mostramos en pantalla que ha sido encendida la tv.
     }
-    
-    @Override 
-    public String Cambiar_Canal(){
-        return "Canal cambiado";
+    public void Apagar(){
+        System.out.println("Dispositivo Apagado");   //Mostramos en pantalla que la tv se ha apagado.
     }
+  
 }
